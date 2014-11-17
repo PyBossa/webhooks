@@ -16,3 +16,4 @@ def basic(**kwargs):
         print "The top answer for task.id %s is %s" % (t.id, desc['top'])
     with open('./static/results.json', 'w') as f:
         f.write(json.dumps(kwargs))
+    return "OK"
