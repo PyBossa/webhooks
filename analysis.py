@@ -29,7 +29,7 @@ def basic(**kwargs):
     e.get_task_runs()
     print e.tasks
     print "Enki initaliated"
-    for t in e.tasks:
+    for t in e.tasks: # pragma: no cover
         desc = e.task_runs_df[t.id]['info'].describe()
         print "The top answer for task.id %s is %s" % (t.id, desc['top'])
     with open('./static/results.json', 'w') as f:
