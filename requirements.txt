@@ -2,5 +2,5 @@ flask
 enki
 rq
 coverage
-nosetests
+nose
 rednose
