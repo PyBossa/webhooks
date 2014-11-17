@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/PyBossa/webhooks.svg)](https://travis-ci.org/PyBossa/webhooks)
 ## Analyzing your PyBossa project in real-time
 
 This very simple web module shows how you can easily analyze your PyBossa
