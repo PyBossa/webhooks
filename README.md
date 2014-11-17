@@ -1,4 +1,6 @@
-[![Build Status](https://travis-ci.org/PyBossa/webhooks.svg)](https://travis-ci.org/PyBossa/webhooks)
+[![Build
+Status](https://travis-ci.org/PyBossa/webhooks.svg)](https://travis-ci.org/PyBossa/webhooks)
+[![Coverage Status](https://img.shields.io/coveralls/PyBossa/webhooks.svg)](https://coveralls.io/r/PyBossa/webhooks?branch=master)
 ## Analyzing your PyBossa project in real-time
 
 This very simple web module shows how you can easily analyze your PyBossa
@@ -8,7 +10,7 @@ PyBossa supports webhooks, notifying via an HTTP POST request the task that has
 been completed by the volunteers or users. The POST sends basically the
 following data:
 
-```json
+```JSON
 {'fired_at':,
  'app_short_name': 'project-slug',
  'app_id': 1,
