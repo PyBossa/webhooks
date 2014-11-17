@@ -47,3 +47,4 @@ pybossa/themes/crowdcrafting-theme/
 static/results.json
 
 test/test_cache.py
+settings.py
