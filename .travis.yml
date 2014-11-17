@@ -1,10 +1,11 @@
 language: python
 python:
   - "2.7"
+services:
+  - redis-server
 before_install:
   - pip install coveralls --use-mirrors
   - cp settings_testing.py settings.py
-  - apt-get install redis-server
 script: nosetests test
 after_success:
   - coveralls
