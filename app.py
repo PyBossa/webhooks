@@ -1,6 +1,3 @@
-import json
-import enki
-import settings
 from flask import Flask, render_template, request
 from analysis import basic
 app = Flask(__name__)
