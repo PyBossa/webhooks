@@ -39,6 +39,6 @@ def index():
             basic(**request.json)
         return "OK"
 
-if __name__ == "__main__":
+if __name__ == "__main__": # pragma: no cover
     app.debug = True
     app.run()
