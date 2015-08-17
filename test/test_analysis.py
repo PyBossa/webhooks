@@ -39,7 +39,7 @@ class TestApp(Test):
         with patch('enki.Enki', autospec=True):
             enki_mock = enki.Enki(endpoint='server',
                                   api_key='api',
-                                  app_short_name='project')
+                                  project_short_name='project')
             enki_mock.tasks = []
             res = basic(**self.payload)
             assert enki_mock.get_tasks.called
