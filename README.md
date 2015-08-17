@@ -10,12 +10,14 @@ PyBossa supports webhooks, notifying via an HTTP POST request the task that has
 been completed by the volunteers or users. The POST sends basically the
 following data:
 
-```JSON
+```
+
 {'fired_at':,
- 'app_short_name': 'project-slug',
- 'app_id': 1,
+ 'project_short_name': 'project-slug',
+ 'project_id': 1,
  'task_id': 1,
  'event': 'task_completed'} 
+
 ```
 
 The PyBossa server sends all the required information to analyze the results of

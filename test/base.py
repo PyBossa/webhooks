@@ -33,8 +33,8 @@ class Test(object):
     """Class for Testing the PyBossa application."""
 
     payload = dict(fired_at=u'2014-11-17 09:49:27',
-                   app_short_name=u'project',
-                   app_id=1,
+                   project_short_name=u'project',
+                   project_id=1,
                    task_id=1,
                    event=u'task_completed')
 
