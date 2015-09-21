@@ -55,7 +55,7 @@ class TestApp(Test):
         assert "OK" in res.data, res.data
 
     @patch('settings.enable_background_jobs', True)
-    @patch('app.q.enqueue')
+    @patch('app.Queue')
     def test_post_works_with_queues(self, mock):
         """Test POST method works with queues."""
         res = self.tc.post('/', headers={'Content-type': 'application/json'},
