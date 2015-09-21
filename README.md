@@ -82,6 +82,8 @@ rqworker mywebhooks
 *NOTE*: If you've changed the name of the queue, please, update the previous
 command with your new queue name. That's all! Enjoy!!!
 
-## LICENSE
+## LICENSE / Copyright
+
+Copyright (C) 2015 [SciFabric LTD](http://scifabric.com).
 
 See COPYING file.
