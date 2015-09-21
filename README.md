@@ -47,6 +47,8 @@ Now, copy the settings.py.template file to: **settings.py** and fill in the
 information. Once you are done with this file, you'll be ready to run the
 server.
 
+**NOTE**: It requires a PyBossa server >= 1.0.0.
+
 ## Running the server
 
 Now that you've the required libraries installed, running the server is as
