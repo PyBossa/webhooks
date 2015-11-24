@@ -32,6 +32,10 @@ def basic(**kwargs):
     for t in e.tasks: # pragma: no cover
         desc = e.task_runs_df[t.id]['info'].describe()
         print "The top answer for task.id %s is %s" % (t.id, desc['top'])
+        result = enki.pbclient.find_results(project_id=kwargs['project_id'],
+                                            id=kwargs['result_id'])[0]
+        result.info = dict(top=desc['top'])
+        print enki.pbclient.update_result(result)
     with open('./static/results.json', 'w') as f:
         f.write(json.dumps(kwargs))
     return "OK"
