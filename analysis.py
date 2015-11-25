@@ -36,6 +36,7 @@ def basic(**kwargs):
         result = enki.pbclient.find_results(project_id=kwargs['project_id'],
                                             id=kwargs['result_id'])[0]
         result.info = dict(summary=summary, analysis=analysis)
+        enki.pbclient.update_result(result)
     with open('./static/results.json', 'w') as f:
         f.write(json.dumps(kwargs))
     return "OK"
