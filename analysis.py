@@ -27,11 +27,16 @@ def basic(**kwargs):
                   project_short_name=kwargs['project_short_name'])
     e.get_tasks(task_id=kwargs['task_id'])
     e.get_task_runs()
-    print e.tasks
-    print "Enki initaliated"
     for t in e.tasks: # pragma: no cover
         desc = e.task_runs_df[t.id]['info'].describe()
-        print "The top answer for task.id %s is %s" % (t.id, desc['top'])
+        # print "The top answer for task.id %s is %s" % (t.id, desc['top'])
+        value_counts = e.task_runs_df[t.id]['info'].value_counts()
+        analysis = dict(value_counts)
+        summary = dict(desc)
+        result = enki.pbclient.find_results(project_id=kwargs['project_id'],
+                                            id=kwargs['result_id'])[0]
+        result.info = dict(summary=summary, analysis=analysis)
+        enki.pbclient.update_result(result)
     with open('./static/results.json', 'w') as f:
         f.write(json.dumps(kwargs))
     return "OK"
