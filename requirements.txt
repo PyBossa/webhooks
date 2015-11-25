@@ -4,4 +4,3 @@ rq
 coverage
 nose
 rednose
-pybossa-client
