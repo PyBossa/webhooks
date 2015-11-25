@@ -16,6 +16,7 @@ following data:
  'project_short_name': 'project-slug',
  'project_id': 1,
  'task_id': 1,
+ 'result_id': 1,
  'event': 'task_completed'} 
 
 ```
@@ -47,7 +48,12 @@ Now, copy the settings.py.template file to: **settings.py** and fill in the
 information. Once you are done with this file, you'll be ready to run the
 server.
 
-**NOTE**: It requires a PyBossa server >= 1.0.0.
+**NOTE**: Be sure to have a PyBossa API-KEY as the analysis will be stored in the 
+PyBossa results table.
+
+**NOTE**: It requires a PyBossa server >= 1.2.0.
+
+
 
 ## Running the server
 
