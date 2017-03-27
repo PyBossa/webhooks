@@ -1,5 +1,5 @@
 [![Build
-Status](https://travis-ci.org/PyBossa/webhooks.svg)](https://travis-ci.org/PyBossa/webhooks)
+Status](https://travis-ci.org/Scifabric/webhooks.svg)](https://travis-ci.org/Scifabric/webhooks)
 [![Coverage Status](https://img.shields.io/coveralls/PyBossa/webhooks.svg)](https://coveralls.io/r/PyBossa/webhooks?branch=master)
 ## Analyzing your PyBossa project in real-time
 
