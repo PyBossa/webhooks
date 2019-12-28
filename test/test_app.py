@@ -52,7 +52,7 @@ class TestApp(Test):
                            data=json.dumps(self.payload), follow_redirects=True)
         assert mock.called
         assert res.status_code == 200, self.ERR_MSG_200_STATUS_CODE
-        assert "OK" in res.data, res.data
+        assert b'OK' in res.data, res.data
 
     @patch('settings.enable_background_jobs', True)
     @patch('app.Queue')
@@ -62,4 +62,4 @@ class TestApp(Test):
                            data=json.dumps(self.payload), follow_redirects=True)
         assert mock.called
         assert res.status_code == 200, self.ERR_MSG_200_STATUS_CODE
-        assert "OK" in res.data, res.data
+        assert b'OK' in res.data, res.data
