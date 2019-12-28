@@ -32,11 +32,11 @@ class Test(object):
 
     """Class for Testing the PyBossa application."""
 
-    payload = dict(fired_at=u'2014-11-17 09:49:27',
-                   project_short_name=u'project',
+    payload = dict(fired_at='2014-11-17 09:49:27',
+                   project_short_name='project',
                    project_id=1,
                    task_id=1,
-                   event=u'task_completed')
+                   event='task_completed')
 
     ERR_MSG_200_STATUS_CODE = 'Status code should be 200'
     ERR_MSG_404_STATUS_CODE = 'Status code should be 404'
